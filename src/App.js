@@ -5,6 +5,7 @@ import MainLayout from './components/Layout/MainLayout';
 import LoginScreen from './components/Auth/LoginScreen';
 import ErrorBoundary from './components/Common/ErrorBoundary';
 import DataInitializer from './utils/DataInitializer';
+import dataService from './services/DataService';
 import LoadingSpinner from './components/Common/LoadingSpinner';
 import { useAuth } from './contexts/AuthContext';
 import './App.css';
