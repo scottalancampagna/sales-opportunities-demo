@@ -1,7 +1,7 @@
 // services/cloudApi.js
 // Replace localStorage with cloud API calls
 
-const BASE_URL = 'https://deal-tracker-api-v2-sc-g3g4gzgfdxc2ddbe.westus2-01.azurewebsites.net/api';
+const BASE_URL = 'https://deal-tracker-api-sc-a4fyh2h2f6a2aehv.westus2-01.azurewebsites.net/api';
 
 // API service class to handle all cloud operations
 class CloudApiService {
