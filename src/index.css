@@ -1,0 +1,189 @@
+/* Import Bootstrap CSS */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Custom utility classes */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dee2e6;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #adb5bd;
+}
+
+/* Custom gap utilities for consistency */
+.gap-1 {
+  gap: 0.25rem !important;
+}
+
+.gap-2 {
+  gap: 0.5rem !important;
+}
+
+.gap-3 {
+  gap: 1rem !important;
+}
+
+.gap-4 {
+  gap: 1.5rem !important;
+}
+
+/* Custom stage colors */
+.stage-badge {
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+}
+
+/* Activity timeline styling */
+.activity-timeline .flex-shrink-0 {
+  position: relative;
+}
+
+.activity-timeline .flex-shrink-0::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 12px;
+  bottom: -12px;
+  width: 1px;
+  background-color: #dee2e6;
+  transform: translateX(-50%);
+}
+
+.activity-timeline .d-flex:last-child .flex-shrink-0::before {
+  display: none;
+}
+
+/* Timeline styling for StageManager */
+.timeline .position-relative:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 24px;
+  height: 24px;
+  width: 2px;
+  background-color: #dee2e6;
+  z-index: 0;
+}
+
+/* Kanban-specific styles */
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.transition-all {
+  transition: all 0.2s ease-in-out;
+}
+
+.hover\:shadow-md:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+/* Drag and drop visual feedback */
+.card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card[draggable="true"]:active {
+  transform: rotate(5deg) scale(1.05);
+  z-index: 1000;
+}
+
+/* Custom scrollbar for horizontal scroll */
+.overflow-auto::-webkit-scrollbar {
+  height: 8px;
+}
+
+.overflow-auto::-webkit-scrollbar-track {
+  background: #f1f3f4;
+  border-radius: 4px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .kanban-column {
+    width: 280px !important;
+  }
+}
+
+/* Sidebar styling */
+.sidebar-expanded {
+  width: 16rem !important;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar-collapsed {
+  width: 4rem !important;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Height utilities */
+.h-100 {
+  height: 100% !important;
+}
+
+.vh-100 {
+  height: 100vh !important;
+}
+
+/* Position utilities */
+.sticky-top {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1020;
+}
+
+/* Text utilities */
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Flex utilities for better compatibility */
+.flex-fill {
+  flex: 1 1 auto !important;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+/* User select utilities */
+.user-select-none {
+  user-select: none !important;
+}
